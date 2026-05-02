@@ -5,20 +5,20 @@
 class Eeia < Formula
   desc "EEIA coding challenges CLI"
   homepage "https://eeiachallenges.com"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ML-for-B-E/eeia-challenges-cli/releases/download/v0.1.0/eeia_0.1.0_darwin_amd64.tar.gz"
-      sha256 "cb05fb1cf47ce4848caee20f4df5a697a969623f8bce720eb0d27b6a03637d52"
+      url "https://github.com/ML-for-B-E/homebrew-eeia-challenges-cli/releases/download/v0.1.1/eeia_0.1.1_darwin_amd64.tar.gz"
+      sha256 "81c1f3715a221ebf8bd27b364ec778d84749b14b55602b5505382f5e2a8e46e1"
 
       define_method(:install) do
         bin.install "eeia"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ML-for-B-E/eeia-challenges-cli/releases/download/v0.1.0/eeia_0.1.0_darwin_arm64.tar.gz"
-      sha256 "b24351c290c97830a3348db40040de1f70c4b2f8c626d282e5d69fd319435a66"
+      url "https://github.com/ML-for-B-E/homebrew-eeia-challenges-cli/releases/download/v0.1.1/eeia_0.1.1_darwin_arm64.tar.gz"
+      sha256 "cd1bb092d0fa2d4fccbe8b850ecc9b444a5d7caca269ce2ae5ecd0a474b2c812"
 
       define_method(:install) do
         bin.install "eeia"
@@ -28,15 +28,15 @@ class Eeia < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ML-for-B-E/eeia-challenges-cli/releases/download/v0.1.0/eeia_0.1.0_linux_amd64.tar.gz"
-      sha256 "a073ad87a1a81a1e74951457c3e4eaf6e145931cb17ad7560f49b78b80ca0a8c"
+      url "https://github.com/ML-for-B-E/homebrew-eeia-challenges-cli/releases/download/v0.1.1/eeia_0.1.1_linux_amd64.tar.gz"
+      sha256 "ce7db409f6458569de04bfff46cd925eb56a2434f49d63a414222715bba7884c"
       define_method(:install) do
         bin.install "eeia"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ML-for-B-E/eeia-challenges-cli/releases/download/v0.1.0/eeia_0.1.0_linux_arm64.tar.gz"
-      sha256 "f7876ab2292af69ec704def0d3c5b0a1d440c4dc3d580fdbd97eb51714669dcb"
+      url "https://github.com/ML-for-B-E/homebrew-eeia-challenges-cli/releases/download/v0.1.1/eeia_0.1.1_linux_arm64.tar.gz"
+      sha256 "f418b2cdcd6478dcd15ace475af0b28e87c2ba7bded6d177dffe76554bfb55f8"
       define_method(:install) do
         bin.install "eeia"
       end
